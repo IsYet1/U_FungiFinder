@@ -22,6 +22,7 @@
 		F67E0FF9274EEB9F00980C1E /* FungiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FF0274EEB9F00980C1E /* FungiListView.swift */; };
 		F67E0FFA274EEB9F00980C1E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FF1274EEB9F00980C1E /* RegisterView.swift */; };
 		F67E0FFB274EEB9F00980C1E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FF2274EEB9F00980C1E /* LoadingView.swift */; };
+		F67E0FFF274EF16600980C1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F67E0FFE274EF16600980C1E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		F67E0FF0274EEB9F00980C1E /* FungiListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FungiListView.swift; sourceTree = "<group>"; };
 		F67E0FF1274EEB9F00980C1E /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F67E0FF2274EEB9F00980C1E /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F67E0FFE274EF16600980C1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				F67E0FD7274EEA4700980C1E /* ContentView.swift */,
 				F67E0FD9274EEA4800980C1E /* Assets.xcassets */,
 				F67E0FDB274EEA4800980C1E /* Preview Content */,
+				F67E0FFE274EF16600980C1E /* GoogleService-Info.plist */,
 			);
 			path = U_FungiFinder;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			files = (
 				F67E0FDD274EEA4800980C1E /* Preview Assets.xcassets in Resources */,
 				F67E0FDA274EEA4800980C1E /* Assets.xcassets in Resources */,
+				F67E0FFF274EF16600980C1E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
