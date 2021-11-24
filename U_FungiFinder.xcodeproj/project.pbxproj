@@ -11,6 +11,17 @@
 		F67E0FD8274EEA4700980C1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FD7274EEA4700980C1E /* ContentView.swift */; };
 		F67E0FDA274EEA4800980C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67E0FD9274EEA4800980C1E /* Assets.xcassets */; };
 		F67E0FDD274EEA4800980C1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67E0FDC274EEA4800980C1E /* Preview Assets.xcassets */; };
+		F67E0FE6274EEB6E00980C1E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FE4274EEB6E00980C1E /* UIImage+Extensions.swift */; };
+		F67E0FE7274EEB6E00980C1E /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FE5274EEB6E00980C1E /* View+Extensions.swift */; };
+		F67E0FF3274EEB9F00980C1E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FE9274EEB9F00980C1E /* LoginView.swift */; };
+		F67E0FF4274EEB9F00980C1E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FEA274EEB9F00980C1E /* ImagePicker.swift */; };
+		F67E0FF5274EEB9F00980C1E /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FEB274EEB9F00980C1E /* PhotoCaptureView.swift */; };
+		F67E0FF6274EEB9F00980C1E /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FED274EEB9F00980C1E /* PrimaryButtonStyle.swift */; };
+		F67E0FF7274EEB9F00980C1E /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FEE274EEB9F00980C1E /* SecondaryButtonStyle.swift */; };
+		F67E0FF8274EEB9F00980C1E /* EmptyFungiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FEF274EEB9F00980C1E /* EmptyFungiView.swift */; };
+		F67E0FF9274EEB9F00980C1E /* FungiListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FF0274EEB9F00980C1E /* FungiListView.swift */; };
+		F67E0FFA274EEB9F00980C1E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FF1274EEB9F00980C1E /* RegisterView.swift */; };
+		F67E0FFB274EEB9F00980C1E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FF2274EEB9F00980C1E /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,17 @@
 		F67E0FD7274EEA4700980C1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F67E0FD9274EEA4800980C1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F67E0FDC274EEA4800980C1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F67E0FE4274EEB6E00980C1E /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		F67E0FE5274EEB6E00980C1E /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		F67E0FE9274EEB9F00980C1E /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F67E0FEA274EEB9F00980C1E /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F67E0FEB274EEB9F00980C1E /* PhotoCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		F67E0FED274EEB9F00980C1E /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		F67E0FEE274EEB9F00980C1E /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
+		F67E0FEF274EEB9F00980C1E /* EmptyFungiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyFungiView.swift; sourceTree = "<group>"; };
+		F67E0FF0274EEB9F00980C1E /* FungiListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FungiListView.swift; sourceTree = "<group>"; };
+		F67E0FF1274EEB9F00980C1E /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F67E0FF2274EEB9F00980C1E /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,10 @@
 		F67E0FD4274EEA4700980C1E /* U_FungiFinder */ = {
 			isa = PBXGroup;
 			children = (
+				F67E0FFD274EEBBE00980C1E /* View Models */,
+				F67E0FFC274EEBB000980C1E /* Models */,
+				F67E0FE8274EEB9F00980C1E /* Views */,
+				F67E0FE3274EEB6E00980C1E /* Extensions */,
 				F67E0FD5274EEA4700980C1E /* U_FungiFinderApp.swift */,
 				F67E0FD7274EEA4700980C1E /* ContentView.swift */,
 				F67E0FD9274EEA4800980C1E /* Assets.xcassets */,
@@ -65,6 +91,53 @@
 				F67E0FDC274EEA4800980C1E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F67E0FE3274EEB6E00980C1E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F67E0FE4274EEB6E00980C1E /* UIImage+Extensions.swift */,
+				F67E0FE5274EEB6E00980C1E /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F67E0FE8274EEB9F00980C1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F67E0FE9274EEB9F00980C1E /* LoginView.swift */,
+				F67E0FEA274EEB9F00980C1E /* ImagePicker.swift */,
+				F67E0FEB274EEB9F00980C1E /* PhotoCaptureView.swift */,
+				F67E0FEC274EEB9F00980C1E /* Styles */,
+				F67E0FEF274EEB9F00980C1E /* EmptyFungiView.swift */,
+				F67E0FF0274EEB9F00980C1E /* FungiListView.swift */,
+				F67E0FF1274EEB9F00980C1E /* RegisterView.swift */,
+				F67E0FF2274EEB9F00980C1E /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F67E0FEC274EEB9F00980C1E /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F67E0FED274EEB9F00980C1E /* PrimaryButtonStyle.swift */,
+				F67E0FEE274EEB9F00980C1E /* SecondaryButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		F67E0FFC274EEBB000980C1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F67E0FFD274EEBBE00980C1E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +210,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67E0FE6274EEB6E00980C1E /* UIImage+Extensions.swift in Sources */,
+				F67E0FF7274EEB9F00980C1E /* SecondaryButtonStyle.swift in Sources */,
 				F67E0FD8274EEA4700980C1E /* ContentView.swift in Sources */,
+				F67E0FF5274EEB9F00980C1E /* PhotoCaptureView.swift in Sources */,
+				F67E0FE7274EEB6E00980C1E /* View+Extensions.swift in Sources */,
+				F67E0FF6274EEB9F00980C1E /* PrimaryButtonStyle.swift in Sources */,
+				F67E0FF8274EEB9F00980C1E /* EmptyFungiView.swift in Sources */,
+				F67E0FF4274EEB9F00980C1E /* ImagePicker.swift in Sources */,
+				F67E0FF3274EEB9F00980C1E /* LoginView.swift in Sources */,
+				F67E0FFA274EEB9F00980C1E /* RegisterView.swift in Sources */,
+				F67E0FF9274EEB9F00980C1E /* FungiListView.swift in Sources */,
+				F67E0FFB274EEB9F00980C1E /* LoadingView.swift in Sources */,
 				F67E0FD6274EEA4700980C1E /* U_FungiFinderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
