@@ -12,9 +12,8 @@ struct LoginView: View {
     @State var isPresented: Bool = false
     @State var isActive: Bool = false
     
-    @State private var email: String = ""
-    @State private var password: String = ""
-        
+    @StateObject private var loginVM = LoginViewModel()
+           
     var body: some View {
         VStack {
             Image("mushroom")
@@ -23,15 +22,17 @@ struct LoginView: View {
                 .clipShape(Circle())
                 .padding(.bottom, 20)
             
-            TextField("Username", text: $email)
+            TextField("Username", text: $loginVM.email)
                 .padding(.bottom, 20)
             
-            SecureField("Password", text: $password)
+            SecureField("Password", text: $loginVM.password)
                
             Spacer()
             
             Button("Login") {
-               
+                loginVM.login {
+                    isActive = true
+                }
             }
             .buttonStyle(PrimaryButtonStyle())
             .padding(.bottom, 10)

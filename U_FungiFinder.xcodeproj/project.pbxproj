@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F629E59B27519E8D0046B644 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F629E59A27519E8D0046B644 /* RegisterViewModel.swift */; };
+		F629E59D2751A2850046B644 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F629E59C2751A2850046B644 /* LoginViewModel.swift */; };
 		F67E0FD6274EEA4700980C1E /* U_FungiFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FD5274EEA4700980C1E /* U_FungiFinderApp.swift */; };
 		F67E0FD8274EEA4700980C1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FD7274EEA4700980C1E /* ContentView.swift */; };
 		F67E0FDA274EEA4800980C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67E0FD9274EEA4800980C1E /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		F629E59A27519E8D0046B644 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		F629E59C2751A2850046B644 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F67E0FD2274EEA4700980C1E /* U_FungiFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = U_FungiFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67E0FD5274EEA4700980C1E /* U_FungiFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U_FungiFinderApp.swift; sourceTree = "<group>"; };
 		F67E0FD7274EEA4700980C1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				F629E59A27519E8D0046B644 /* RegisterViewModel.swift */,
+				F629E59C2751A2850046B644 /* LoginViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				F67E0FE7274EEB6E00980C1E /* View+Extensions.swift in Sources */,
 				F67E0FF6274EEB9F00980C1E /* PrimaryButtonStyle.swift in Sources */,
 				F67E0FF8274EEB9F00980C1E /* EmptyFungiView.swift in Sources */,
+				F629E59D2751A2850046B644 /* LoginViewModel.swift in Sources */,
 				F6A3A3E7274EFAA7008421C1 /* Task.swift in Sources */,
 				F629E59B27519E8D0046B644 /* RegisterViewModel.swift in Sources */,
 				F67E0FF4274EEB9F00980C1E /* ImagePicker.swift in Sources */,
