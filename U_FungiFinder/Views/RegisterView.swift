@@ -13,6 +13,8 @@ struct RegisterView: View {
    
     @State private var email: String = ""
     @State private var password: String = ""
+    
+    @StateObject private var registerVM = RegisterViewModel()
         
     var body: some View {
         VStack {
@@ -22,13 +24,15 @@ struct RegisterView: View {
                 .clipShape(Circle())
                 .padding(.bottom, 20)
             
-            TextField("Email", text: $email)
+            TextField("Email", text: $registerVM.email)
                 .padding(.bottom, 20)
             
-            SecureField("Password", text: $password)
+            SecureField("Password", text: $registerVM.password)
             
             Button("Create account") {
-               
+                registerVM.register {
+                    presentationMode.wrappedValue.dismiss()
+                }
                 
             }
             .buttonStyle(PrimaryButtonStyle())
