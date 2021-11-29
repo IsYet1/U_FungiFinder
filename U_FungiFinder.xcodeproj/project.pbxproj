@@ -35,6 +35,7 @@
 		F6A3A3E5274EFAA7008421C1 /* TasksContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A3A3E2274EFAA7008421C1 /* TasksContentView.swift */; };
 		F6A3A3E6274EFAA7008421C1 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A3A3E3274EFAA7008421C1 /* TaskDetailView.swift */; };
 		F6A3A3E7274EFAA7008421C1 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A3A3E4274EFAA7008421C1 /* Task.swift */; };
+		F6AC57A127558768009D3227 /* FungiListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC57A027558768009D3227 /* FungiListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		F6A3A3E2274EFAA7008421C1 /* TasksContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksContentView.swift; sourceTree = "<group>"; };
 		F6A3A3E3274EFAA7008421C1 /* TaskDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		F6A3A3E4274EFAA7008421C1 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F6AC57A027558768009D3227 /* FungiListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				F629E59A27519E8D0046B644 /* RegisterViewModel.swift */,
 				F629E59C2751A2850046B644 /* LoginViewModel.swift */,
+				F6AC57A027558768009D3227 /* FungiListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				F629E59B27519E8D0046B644 /* RegisterViewModel.swift in Sources */,
 				F67E0FF4274EEB9F00980C1E /* ImagePicker.swift in Sources */,
 				F67E0FF3274EEB9F00980C1E /* LoginView.swift in Sources */,
+				F6AC57A127558768009D3227 /* FungiListViewModel.swift in Sources */,
 				F67E0FFA274EEB9F00980C1E /* RegisterView.swift in Sources */,
 				F67E0FF9274EEB9F00980C1E /* FungiListView.swift in Sources */,
 				F67E0FFB274EEB9F00980C1E /* LoadingView.swift in Sources */,

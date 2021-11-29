@@ -22,10 +22,33 @@ struct FungiListView: View {
     @State private var showActionSheet: Bool = false
     @State private var sourceType: SourceType = .photoLibrary
     
+    @StateObject private var fungiListVM = FungiListViewModel()
+    
+    private func saveFungi() {
+        if let originalImage = originalImage {
+            // .resized is an extension function
+            if let resizedImage = originalImage.resized(width: 1024) {
+                if let data = resizedImage.pngData() {
+                    fungiListVM.uploadPhoto(data: data) { (url) in
+                        if let url = url {
+                            print(url)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     var body: some View {
         ZStack {
             Text("Display List of Fungi")
-           
+            
+            if image != nil {
+                PhotoPreviewView(image: $image, name: $name, save: {
+                    saveFungi()
+                }) // Add shadow here. See lesson 52
+            }
+                       
         }.navigationTitle("Fungi")
         .navigationBarItems(trailing: Button(action: {
             // show camera
