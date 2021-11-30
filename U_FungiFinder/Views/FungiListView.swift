@@ -32,6 +32,9 @@ struct FungiListView: View {
                     fungiListVM.uploadPhoto(data: data) { (url) in
                         if let url = url {
                             print(url)
+                            fungiListVM.save(name: name, url: url) { error in
+                                image = nil
+                            }
                         }
                     }
                 }
