@@ -44,7 +44,13 @@ struct FungiListView: View {
     
     var body: some View {
         ZStack {
-            Text("Display List of Fungi")
+            VStack {
+                if fungiListVM.fungi.count > 0 {
+                    List (fungiListVM.fungi, id: \.fungiId) {fungi in
+                        Text(fungi.name)
+                    }
+                }
+            }
             
             if image != nil {
                 PhotoPreviewView(image: $image, name: $name, save: {
@@ -80,7 +86,7 @@ struct FungiListView: View {
             PhotoCaptureView(showImagePicker: $showImagePicker, image: $image, originalImage: $originalImage, sourceType: sourceType)
         })
     .onAppear(perform: {
-        
+        fungiListVM.getAllFungiForUser()
     })
     }
 }
