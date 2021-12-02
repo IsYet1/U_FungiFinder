@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61D510527598C2100BF7A4F /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = F61D510427598C2100BF7A4F /* URLImage */; };
+		F61D510727598C2100BF7A4F /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = F61D510627598C2100BF7A4F /* URLImageStore */; };
 		F629E59B27519E8D0046B644 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F629E59A27519E8D0046B644 /* RegisterViewModel.swift */; };
 		F629E59D2751A2850046B644 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F629E59C2751A2850046B644 /* LoginViewModel.swift */; };
 		F67E0FD6274EEA4700980C1E /* U_FungiFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E0FD5274EEA4700980C1E /* U_FungiFinderApp.swift */; };
@@ -77,8 +79,10 @@
 				F67E1008274EF68D00980C1E /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				F67E1002274EF68D00980C1E /* FirebaseAuth in Frameworks */,
 				F67E100A274EF68D00980C1E /* FirebaseStorage in Frameworks */,
+				F61D510727598C2100BF7A4F /* URLImageStore in Frameworks */,
 				F67E100C274EF68D00980C1E /* FirebaseStorageCombine-Community in Frameworks */,
 				F67E100E274EF68D00980C1E /* FirebaseStorageSwift-Beta in Frameworks */,
+				F61D510527598C2100BF7A4F /* URLImage in Frameworks */,
 				F67E1004274EF68D00980C1E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +217,8 @@
 				F67E1009274EF68D00980C1E /* FirebaseStorage */,
 				F67E100B274EF68D00980C1E /* FirebaseStorageCombine-Community */,
 				F67E100D274EF68D00980C1E /* FirebaseStorageSwift-Beta */,
+				F61D510427598C2100BF7A4F /* URLImage */,
+				F61D510627598C2100BF7A4F /* URLImageStore */,
 			);
 			productName = U_FungiFinder;
 			productReference = F67E0FD2274EEA4700980C1E /* U_FungiFinder.app */;
@@ -244,6 +250,7 @@
 			mainGroup = F67E0FC9274EEA4700980C1E;
 			packageReferences = (
 				F67E1000274EF68D00980C1E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F61D510327598C2100BF7A4F /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = F67E0FD3274EEA4700980C1E /* Products */;
 			projectDirPath = "";
@@ -497,6 +504,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F61D510327598C2100BF7A4F /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		F67E1000274EF68D00980C1E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -508,6 +523,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F61D510427598C2100BF7A4F /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61D510327598C2100BF7A4F /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		F61D510627598C2100BF7A4F /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F61D510327598C2100BF7A4F /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
 		F67E1001274EF68D00980C1E /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F67E1000274EF68D00980C1E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

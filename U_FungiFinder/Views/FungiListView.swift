@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UIKit
+import URLImage
 
 enum SourceType {
     case photoLibrary
@@ -47,7 +48,12 @@ struct FungiListView: View {
             VStack {
                 if fungiListVM.fungi.count > 0 {
                     List (fungiListVM.fungi, id: \.fungiId) {fungi in
-                        Text(fungi.name)
+                        VStack {
+                            URLImage(URL(string: fungi.photoUrl)!) { image in
+                                image.resizable().aspectRatio(contentMode: .fit)
+                            }.clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
+                            Text(fungi.name).font(.headline)
+                        }
                     }
                 }
             }
