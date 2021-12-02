@@ -34,6 +34,11 @@ struct FungiListView: View {
                         if let url = url {
                             print(url)
                             fungiListVM.save(name: name, url: url) { error in
+                                if let error = error {
+                                    print(error.localizedDescription)
+                                } else {
+                                    fungiListVM.getAllFungiForUser()
+                                }
                                 image = nil
                             }
                         }
