@@ -48,12 +48,7 @@ struct FungiListView: View {
             VStack {
                 if fungiListVM.fungi.count > 0 {
                     List (fungiListVM.fungi, id: \.fungiId) {fungi in
-                        VStack {
-                            URLImage(URL(string: fungi.photoUrl)!) { image in
-                                image.resizable().aspectRatio(contentMode: .fit)
-                            }.clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
-                            Text(fungi.name).font(.headline)
-                        }
+                        FungiCell(fungi: fungi)
                     }
                 }
             }
@@ -136,7 +131,7 @@ struct PhotoPreviewView: View {
     }
 }
 
-struct FungiCell: View {
+struct FungiCell0: View {
     
     var body: some View {
         Text("Fungi Cell")
@@ -150,5 +145,18 @@ struct FungiCell: View {
             Text(fungi.name)
                 .font(.headline)
         } */
+    }
+}
+
+struct FungiCell: View {
+    let fungi: FungiViewModel
+    
+    var body: some View {
+        VStack {
+            URLImage(URL(string: fungi.photoUrl)!) { image in
+                image.resizable().aspectRatio(contentMode: .fit)
+            }.clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
+            Text(fungi.name).font(.headline)
+        }
     }
 }
