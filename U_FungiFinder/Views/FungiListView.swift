@@ -26,6 +26,10 @@ struct FungiListView: View {
     @StateObject private var fungiListVM = FungiListViewModel()
     
     private func saveFungi() {
+        DispatchQueue.main.async {
+            fungiListVM.loadingState = .loading
+        }
+
         if let originalImage = originalImage {
             // .resized is an extension function
             if let resizedImage = originalImage.resized(width: 1024) {
@@ -35,8 +39,14 @@ struct FungiListView: View {
                             print(url)
                             fungiListVM.save(name: name, url: url) { error in
                                 if let error = error {
+                                    DispatchQueue.main.async {
+                                        fungiListVM.loadingState = .failure
+                                    }
                                     print(error.localizedDescription)
                                 } else {
+                                    DispatchQueue.main.async {
+                                        fungiListVM.loadingState = .success
+                                    }
                                     fungiListVM.getAllFungiForUser()
                                 }
                                 image = nil
@@ -60,6 +70,8 @@ struct FungiListView: View {
                 }
                 Spacer()
             }
+            
+            LoadingView(loadingState: fungiListVM.loadingState)
             
             if image != nil {
                 PhotoPreviewView(image: $image, name: $name, save: {
