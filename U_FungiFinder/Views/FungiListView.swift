@@ -55,7 +55,10 @@ struct FungiListView: View {
                     List (fungiListVM.fungi, id: \.fungiId) {fungi in
                         FungiCell(fungi: fungi)
                     }
+                } else if fungiListVM.loadingState == .success && fungiListVM.fungi.count == 0 {
+                    EmptyFungiView()
                 }
+                Spacer()
             }
             
             if image != nil {

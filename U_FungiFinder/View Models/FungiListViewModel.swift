@@ -9,13 +9,24 @@ import Foundation
 import Firebase
 import FirebaseFirestoreSwift
 
+enum LoadingState {
+    case idle
+    case loading
+    case success
+    case failure
+}
+
 class FungiListViewModel: ObservableObject {
     
     let storage = Storage.storage()
     let db = Firestore.firestore()
     @Published var fungi: [FungiViewModel] = []
+    @Published var loadingState: LoadingState = .idle
     
     func getAllFungiForUser() {
+        DispatchQueue.main.async {
+            self.loadingState = .loading
+        }
         guard let currentUser = Auth.auth().currentUser else {
             return
         }
@@ -25,6 +36,9 @@ class FungiListViewModel: ObservableObject {
             .getDocuments { [weak self] snapshot, error in
                 if let error = error {
                     print(error.localizedDescription)
+                    DispatchQueue.main.async {
+                        self?.loadingState = .failure
+                    }
                 } else {
                     if let snapshot = snapshot {
                         let fungi: [FungiViewModel] = snapshot.documents.compactMap {doc in
@@ -35,9 +49,10 @@ class FungiListViewModel: ObservableObject {
                             }
                             return nil
                         }
-                        
+                        // self must be ? here because it might be nil
                         DispatchQueue.main.async {
                             self?.fungi = fungi
+                            self?.loadingState = .success
                         }
                     }
                 }
