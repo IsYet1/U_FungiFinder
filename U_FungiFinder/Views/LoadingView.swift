@@ -25,7 +25,7 @@ struct LoadingView: View {
         case .idle, .success, .failure:
             EmptyView()
         }
-        Text("Loading View")
+//        Text("Loading View")
     }
 }
 
