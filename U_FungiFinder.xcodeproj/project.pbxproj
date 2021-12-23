@@ -109,11 +109,12 @@
 		F67E0FD4274EEA4700980C1E /* U_FungiFinder */ = {
 			isa = PBXGroup;
 			children = (
-				F6A3A3E1274EFAA7008421C1 /* TaskFBTest */,
-				F67E0FD7274EEA4700980C1E /* ContentView.swift */,
+				F67E0FE8274EEB9F00980C1E /* Views */,
 				F67E0FFD274EEBBE00980C1E /* View Models */,
 				F67E0FFC274EEBB000980C1E /* Models */,
-				F67E0FE8274EEB9F00980C1E /* Views */,
+				F6A3A3E1274EFAA7008421C1 /* TaskFBTest */,
+				F67E0FD7274EEA4700980C1E /* ContentView.swift */,
+				F67E0FEC274EEB9F00980C1E /* Styles */,
 				F67E0FE3274EEB6E00980C1E /* Extensions */,
 				F67E0FD5274EEA4700980C1E /* U_FungiFinderApp.swift */,
 				F67E0FD9274EEA4800980C1E /* Assets.xcassets */,
@@ -146,7 +147,6 @@
 				F67E0FE9274EEB9F00980C1E /* LoginView.swift */,
 				F67E0FEA274EEB9F00980C1E /* ImagePicker.swift */,
 				F67E0FEB274EEB9F00980C1E /* PhotoCaptureView.swift */,
-				F67E0FEC274EEB9F00980C1E /* Styles */,
 				F67E0FEF274EEB9F00980C1E /* EmptyFungiView.swift */,
 				F67E0FF0274EEB9F00980C1E /* FungiListView.swift */,
 				F67E0FF1274EEB9F00980C1E /* RegisterView.swift */,

@@ -51,6 +51,7 @@ class FungiListViewModel: ObservableObject {
                         }
                         // self must be ? here because it might be nil
                         DispatchQueue.main.async {
+                            print("Pictures loaded. Starting the list.")
                             self?.fungi = fungi
                             self?.loadingState = .success
                         }
